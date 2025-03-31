@@ -1,36 +1,16 @@
-# ⛅ SLA na Azure: Entenda a Disponibilidade da Nuvem
+# 🚀 Configuração de Máquina Virtual e Banco de Dados no Azure
 
-A Azure oferece diversos níveis de SLA (Service Level Agreement), com disponibilidade que pode chegar a **99,999%**! Isso significa um tempo de inatividade de apenas **6 segundos por semana** ou aproximadamente **5,26 minutos por ano**. ⏳💻
+## 🖥️ Criação de Máquina Virtual
 
-## 📈 O que significa um SLA alto?
+Ao criar uma máquina virtual no Azure, há diversas configurações a serem preenchidas. Dependendo da imagem (modelo escolhido), o valor pode variar bastante. No entanto, configurar cada critério individualmente, em vez de utilizar uma imagem pronta, proporciona um melhor aproveitamento dos recursos da nuvem.
 
-Uma regra simples: **quanto mais "noves", maior a disponibilidade!** 🔢
-- **99,999%** (cinco noves) tem mais disponibilidade que **99,99%** (quatro noves),
-- Que, por sua vez, é mais disponível que **99,9%** (três noves).
+## 🗄️ Criação de Banco de Dados
 
-🚨 **Quanto maior o SLA, mais caro ele tende a ser!** 💰
+Na criação de um banco de dados, é necessário configurar um servidor e escolher o tipo de autenticação. Apesar de definir um nome para o servidor, você não tem acesso direto a ele, pois se trata de um modelo *PaaS* (*Platform as a Service*). 
 
-## 🏗️ SLA e Recursos na Azure
+Durante a criação, é essencial escolher o tipo de redundância, que influencia diretamente no SLA (*Service Level Agreement*). Ao selecionar o tipo de redundância, a plataforma apresenta o custo correspondente para o banco de dados.
 
-A disponibilidade do seu serviço depende dos recursos que você cria. Em alguns casos, **você mesmo pode ser responsável pelo SLA** da sua máquina virtual, banco de dados ou outro serviço configurado na Azure.
+## 💰 Cálculo de Custos
 
-📖 **Dica:** Estude a documentação oficial da Azure para entender melhor como cada recurso funciona! Além disso, durante o uso da plataforma, você pode encontrar botões de informação **(ícone "ℹ️")**, que fornecem explicações valiosas sobre conceitos e configurações.
+Para estimar os custos dos serviços do Azure, é possível utilizar a [Calculadora de Custos](https://azure.microsoft.com/pt-br/pricing/calculator/). Essa ferramenta permite simular diferentes configurações e obter uma previsão de gastos com base nas escolhas feitas.
 
-## 🔄 Estratégias de Replicação e SLA
-
-Para garantir um SLA elevado, é essencial entender e aplicar **estratégias de replicação**:
-- Quanto mais locais onde seus dados podem ser escritos, maior a disponibilidade. 🌍🔄
-- Entretanto, **mais replicação significa maior custo!** 📈💲
-
-🎯 **Dica:** Defina bem seus objetivos antes de investir em alta disponibilidade. Um ambiente de desenvolvimento, por exemplo, **não precisa ter um SLA elevado**, enquanto um ambiente de produção pode exigir o máximo de estabilidade.
-
----
-📌 **Resumo:**
-
-✅ SLA pode chegar até 99,999% (máxima disponibilidade, mínimo downtime)  
-✅ Mais "noves" = maior disponibilidade (e maior custo!)  
-✅ Estude a documentação e use os botões de informação da Azure  
-✅ Estratégias de replicação aumentam a disponibilidade, mas também os custos  
-✅ Adapte o SLA conforme a necessidade do ambiente (desenvolvimento vs. produção)  
-
-🚀 Com esse conhecimento, você pode tomar decisões mais informadas sobre a disponibilidade dos seus serviços na Azure! 🌐⚙️
