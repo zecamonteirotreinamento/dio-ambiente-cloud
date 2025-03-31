@@ -1,16 +1,20 @@
-# 🚀 Configuração de Máquina Virtual e Banco de Dados no Azure
+# 🌍 Explorando a Infraestrutura Global do Azure
 
-## 🖥️ Criação de Máquina Virtual
+## 🔎 Visão Geral do Site do Azure
 
-Ao criar uma máquina virtual no Azure, há diversas configurações a serem preenchidas. Dependendo da imagem (modelo escolhido), o valor pode variar bastante. No entanto, configurar cada critério individualmente, em vez de utilizar uma imagem pronta, proporciona um melhor aproveitamento dos recursos da nuvem.
+No site do Azure, é possível explorar a infraestrutura global da plataforma. Ele traz notícias sobre *datacenters* que estão sendo construídos e disponibiliza um globo digital interativo, permitindo visualizar detalhes sobre cada *datacenter*. Dessa forma, é possível estudar cada geografia do Azure e realizar um tour virtual pelos lobbies.
 
-## 🗄️ Criação de Banco de Dados
+## 🏗️ Portal do Azure e Gerenciamento de Recursos
 
-Na criação de um banco de dados, é necessário configurar um servidor e escolher o tipo de autenticação. Apesar de definir um nome para o servidor, você não tem acesso direto a ele, pois se trata de um modelo *PaaS* (*Platform as a Service*). 
+No *Portal do Azure*, ao criar um grupo de recursos, é possível utilizar *tags* para facilitar a divisão e organização dos valores pagos. Além disso, existem diversas ferramentas para gerenciar os recursos de forma eficiente:
 
-Durante a criação, é essencial escolher o tipo de redundância, que influencia diretamente no SLA (*Service Level Agreement*). Ao selecionar o tipo de redundância, a plataforma apresenta o custo correspondente para o banco de dados.
+- **📜 Log de Atividade** – Exibe quando e como os recursos foram criados.
+- **🔐 IAM (Identity and Access Management)** – Permite gerenciar os acessos e permissões.
+- **🌳 Visualizador de Recursos** – Cria uma árvore de vida dos recursos configurados.
+- **📅 Eventos** – Auxilia na automação de processos.
 
-## 💰 Cálculo de Custos
+## 📖 A Importância da Documentação
 
-Para estimar os custos dos serviços do Azure, é possível utilizar a [Calculadora de Custos](https://azure.microsoft.com/pt-br/pricing/calculator/). Essa ferramenta permite simular diferentes configurações e obter uma previsão de gastos com base nas escolhas feitas.
+No universo *Cloud*, as coisas são extremamente dinâmicas e mudam constantemente. Por isso, é essencial consultar regularmente a documentação oficial para se manter atualizado. 
 
+A tecnologia avança rápido, e estar informado faz toda a diferença! 🚀
