@@ -1,16 +1,45 @@
-# 🚀 Configuração de Máquina Virtual e Banco de Dados no Azure
+# 🚀 Criando uma Máquina Virtual no Azure
 
-## 🖥️ Criação de Máquina Virtual
+Ao criar uma máquina virtual no **Azure**, é possível escolher modelos pré-definidos com algumas configurações, o que otimiza a criação. Essas pré-definições podem ser alteradas futuramente.
 
-Ao criar uma máquina virtual no Azure, há diversas configurações a serem preenchidas. Dependendo da imagem (modelo escolhido), o valor pode variar bastante. No entanto, configurar cada critério individualmente, em vez de utilizar uma imagem pronta, proporciona um melhor aproveitamento dos recursos da nuvem.
+## 🛠️ Configuração Manual
+Caso opte por configurar a máquina virtual manualmente, será necessário definir os seguintes itens:
 
-## 🗄️ Criação de Banco de Dados
+- **Assinatura**
+- **Grupo de recursos**
+- **Nome da máquina virtual**
+- **Região**
+- **Opções de disponibilidade**
+- **Zona de disponibilidade**
+- **Tipo de segurança**
+- **Imagem e arquitetura**
+- **Outras configurações essenciais**
 
-Na criação de um banco de dados, é necessário configurar um servidor e escolher o tipo de autenticação. Apesar de definir um nome para o servidor, você não tem acesso direto a ele, pois se trata de um modelo *PaaS* (*Platform as a Service*). 
+## 📊 Configuração de Escala
+A configuração de escala é fundamental durante a criação das máquinas. As opções necessárias incluem:
 
-Durante a criação, é essencial escolher o tipo de redundância, que influencia diretamente no SLA (*Service Level Agreement*). Ao selecionar o tipo de redundância, a plataforma apresenta o custo correspondente para o banco de dados.
+- **Contagem e limite de instâncias**
+- **Escalonamento e redução horizontal**
+- **Duração da consulta**
 
-## 💰 Cálculo de Custos
+## 📏 Escolha do Tamanho da VM
+O **Portal do Azure** apresenta uma tabela com os tamanhos das VMs e uma descrição sobre a usabilidade recomendada para cada tamanho. Esse é um dos itens necessários para selecionar ao criar uma VM.
 
-Para estimar os custos dos serviços do Azure, é possível utilizar a [Calculadora de Custos](https://azure.microsoft.com/pt-br/pricing/calculator/). Essa ferramenta permite simular diferentes configurações e obter uma previsão de gastos com base nas escolhas feitas.
+## 💾 Configuração do Disco
+Uma boa prática é selecionar a opção **"Excluir com VM"**, pois ao excluir uma VM, o uso do disco continua sendo cobrado. Esses discos que permanecem ativos são chamados de **"discos órfãos"**.
 
+## 🌐 Configuração de Rede
+Na criação da VM, é necessário **selecionar ou criar uma rede virtual** para seu uso. Assim como no disco, na configuração de rede é recomendável selecionar a opção **"Excluir o IP público e a NIC quando a VM for excluída"**, para evitar cobranças desnecessárias.
+
+## 📈 Monitoramento e Backup
+Durante a configuração da VM, é possível habilitar opções como:
+
+- **Backup**
+- **Horário de desligamento**
+- **Configuração de alertas**
+
+## 🔧 Extensões e Tags
+Por fim, é possível **adicionar extensões e tags** à VM. Após todas as configurações, o Azure apresenta o **custo estimado**, que é calculado por **hora de uso**.
+
+---
+📝 **Dica:** Sempre revise as configurações antes de finalizar a criação para evitar cobranças indesejadas! 💡
